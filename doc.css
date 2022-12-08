@@ -1,0 +1,25 @@
+#article1 {
+    color: red;
+    background-color: lightblue;
+}
+
+#article2 {
+    color: blue;
+}
+
+.heading {
+    border: 2px solid darkred;
+}
+
+.content {
+    font-size: 15px;
+}
+
+p.info {
+    padding: 20px;
+    border: 2px dashed green;
+}
+
+h1, h2 {
+    text-decoration: underline;
+}

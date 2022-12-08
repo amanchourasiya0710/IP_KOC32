@@ -1,0 +1,73 @@
+.largest-div {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: blue;
+    justify-content: space-around;
+}
+
+.secondlargest {
+    width: 100%;
+    display: flex;
+    background-color: blue;
+    justify-content: space-around;
+}
+
+.div1 {
+    width: 40%;
+    background-color: lightblue;
+    text-align: center;
+    height: 416px;
+    line-height: 416px;
+    font-size: 50px;
+    margin: 20px;
+}
+
+.four-boxes {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blue;
+    justify-content: space-around;
+}
+
+.four-boxes > div {
+    background-color: lightblue;
+    height: 108px;
+    line-height: 108px;
+    padding: 40px 60px;
+    margin: 20px;
+    font-size: 50px;
+    width: 20%;
+    text-align: center;
+}
+
+.bottomdiv {
+    width: 80%;
+    text-align: center;
+    background-color: lightblue;
+    padding: 20px;
+    margin: 40px auto;
+    font-size: 50px;
+}
+
+.buttonDiv {
+    margin-top: 40px;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 4px 2px;
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  border: 5px green dashed;
+}

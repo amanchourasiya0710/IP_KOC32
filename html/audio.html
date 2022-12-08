@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Audio tag in html
+    </h1>
+
+    <!--
+        Purpose: To include audio elements in the html page
+
+        Attributes:
+
+        src: The url or path of the audio clip
+
+        controls: This attribute sets up the controls of the audio clip like play button, volume, playback speed, etc.
+
+        loop: This attribute repeats the audio clip after it ends
+
+        muted: It keeps the audio clip muted by default
+
+        autoplay: As soon as the page loads, the audio clip is automatically played.
+    -->
+
+    <audio src="sample_audio.mp3" controls loop>
+        Audio not supported
+    </audio>
+
+    <h2>
+        Autoplay attribute
+    </h2>
+    <audio src="sample_audio.mp3" controls autoplay muted>
+        This browser does not support audio
+    </audio>
+
+    <h2>
+        Audio with source tag
+    </h2>
+
+    <!--
+        source tag
+        Purpose: To include multiple audio files in a html page
+        The first audio which is supported is played.
+
+        Attributes:
+        src: The path of the audio file
+
+        type: Type of the audio file. It gives this info to the browser. No display changes.
+    -->
+    <audio controls autoplay muted loop>
+        <source src="random_file.mp3" type="audio/mp3">
+        <source src="sample_audio.mp3" type="audio/mp3">
+        <source src="/home/captain/IP_KOC32/sample_audio.ogg" type = "audio/ogg">
+    </audio>
+</body>
+</html>

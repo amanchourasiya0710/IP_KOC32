@@ -1,0 +1,12 @@
+.inner-div {
+  background-color: lightgrey;
+  width: 300px;
+  border: 15px solid green;
+  padding: 50px;
+  margin: 20px;
+}
+
+.outer-div {
+    border: 2px solid red;
+    display: flex;
+}

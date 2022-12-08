@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Video tag in html
+    </h1>
+
+    <!--
+        video tag
+        Purpose: To include video elements in the html page
+
+        Attributes (very similar to audio tag):
+        src: The path of the video file
+
+        controls: It brings the controls features of the video at the bottom like volume, play, fullscreen buttons
+
+        width: It changes width of the video frame
+        height: It changes height of the video frame
+
+        autoplay: 
+
+        loop:
+
+        muted: 
+    -->
+    <video src="/home/captain/IP_KOC32/sample_video.mp4" width = "320" height = "200" controls>
+        Video not supported
+    </video>
+
+    <h2>
+        Autoplay attribute
+    </h2>
+
+    <!--
+        autoplay attribute works only when muted attribute is present
+    -->
+    <video src="/home/captain/IP_KOC32/sample_video.mp4" controls autoplay muted width = "320" height = "200">
+        This browser does not support video files
+    </video>
+
+    <h2>
+        Source tag
+    </h2>
+
+    <!--
+        source tag:
+        Purpose: To include multiple alternative videos
+
+        The first video which is supported will be played.
+    -->
+    <video controls width = "320" height = "200">
+        <source src="random_video.ogg">
+        <source src="/home/captain/IP_KOC32/sample_video.mp4">
+        <source src="/home/captain/IP_KOC32/sample_video.ogg">
+    </video>
+
+    <h2>
+        Example how to put two videos
+    </h2>
+
+    <video controls width = "320" height = "200">
+        <source src="/home/captain/IP_KOC32/sample_video.mp4">
+    </video>
+
+    <video controls width = "320" height = "200">
+        <source src="/home/captain/IP_KOC32/sample_video.mp4">
+    </video>
+</body>
+</html>

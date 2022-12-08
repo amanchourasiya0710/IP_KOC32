@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    font-size: 22px;
+}
+
+div {
+    padding: 30px;
+    margin: auto;
+    background: #f2f2f2;
+    width: 60%;
+}
+
+input[type = "text"], select {
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 10px 0;
+    font-size: 18px;
+    border: 1px solid #ccc;
+}
+
+input[type = "submit"] {
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    background-color: green;
+    outline: none;
+    border: none;
+    color: white;
+}
+
+input[type = "checkbox"] {
+    width: 23px;
+    height: 23px;
+    margin-top: 10px;
+    border-radius: 100%;
+    border: none;
+    background-color: green;
+}
+
+input[type = "submit"]:hover {
+    background-color: #45a049;
+}

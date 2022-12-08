@@ -1,0 +1,42 @@
+/* border property in css
+
+border-style: dotted, dashed, solid, inset, outset
+border-color: Specifies the color of the border
+border-width: Specifies the width of the border
+
+border-style: top-bottom right-left
+border-style: top right bottom left
+
+border: width style color;
+*/
+
+/* padding is internal spacing in a container or division 
+
+padding: top right bottom left;
+padding-left
+padding-right
+padding-top
+padding-bottom
+
+margin-left
+margin-right
+margin-top
+margin-bottom
+*/
+
+.outerDivision {
+    /* border-color: blue;
+    border-width: 3px;
+    border-style: dotted; */
+
+    border: 3px dotted blue;
+    margin-top: 100px;
+}
+
+.innerDivision {
+    border: 3px dashed red;
+    padding-top: 100px;
+    padding-right: 30px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}

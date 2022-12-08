@@ -1,0 +1,22 @@
+.parent {
+    display: flex;
+    /* flex-direction: row means side by side arrangement
+    flex-direction: column means one below the other */
+    flex-direction: row;
+    /* Possible values: row, column, row-reverse, column-reverse */
+
+    justify-content: space-around;
+    /* center
+    space-around */
+    /* space-between */
+
+    flex-wrap: wrap;
+
+    background-color: blue;
+}
+
+.parent > div {
+    background-color: lightblue;
+    padding: 10px 30px;
+    margin: 10px;
+}

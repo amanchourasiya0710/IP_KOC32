@@ -1,0 +1,58 @@
+.parent {
+    width: 400px;
+    background-color: blue;
+    margin: 20px;
+    height: 400px;
+    position: relative;
+}
+
+.greet {
+    width: 400px;
+    background-color: blue;
+    margin: 20px;
+    height: 400px;
+    position: relative;
+    text-align: center;
+}
+
+.text {
+    color: white;
+    font-size: 20px;
+
+    /* position: absolute;
+    right: 50%;
+    top: 50%; */
+    line-height: 400px;
+}
+
+.parent > span {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.demonstrate {
+    padding-bottom: 2000px;
+    background-color: lightblue;
+}
+
+.sticky {
+    font-size: 30px;
+    border: 2px red solid;
+    text-align: center;
+    margin-bottom: 20px;
+    position: sticky;
+    top: 40px;
+}
+
+.fixedProp {
+    border: 2px green solid;
+    font-size: 25px;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}

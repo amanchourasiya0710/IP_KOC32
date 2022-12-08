@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Anchor tag
+    </h2>
+    <!--
+        anchor tag is represented like <a> </a>
+        a tag
+        Purpose: To link other documents or websites.
+
+        Attributes:
+        href attribute also called hyper reference
+        The URL or path of the document that is linked.
+
+        target
+        _self: It is the default value. It opens up the link in the same frame as the link.
+        _blank: The link will open up in a new window or a new tab
+        _top: It opens the link in the whole body of the document
+        _parent: The link opens up in the parent frame which is enclosing the frame where the link is present
+        framename: The name of the frame where the link should open
+
+        download
+        Instead of visiting the link, the resource is downloaded
+
+        hreflang:
+        It specifies the language of the linked document
+
+    -->
+
+    <!--
+        Colours have meanings
+        
+        They are three types of links:
+        Unvisited Link: A link where the user has not visited yet. They are shown in blue color
+        Visited Link: A link where the user has already visited. They are shown in purple color
+        Active Link: The link or the resource attached to the link is getting loaded by the browser. Active link is shown in red color
+    -->
+
+    <!--
+        Types of paths:
+        Absolute Path: The path from the root the computer: D:\User\amanchourasiya\Desktop\html\filename.html
+        Example: C:\Users\s\Documents\IMG_20220104_125925_2
+
+        Relative Path: Relative path is relative to the document where the path is mentioned.
+        IP_KOC32
+        How I can go from IP_KOC32 to forms.html file inside demo folder
+        demo -> forms.html
+
+        demo/forms.html
+    -->
+    <a href="/home/captain/IP_KOC32/forms.html">Form using Absoulte Path</a> <br>
+    <a href="demo/forms.html">Form using Relative Path</a>
+
+    <h3>
+        target attribute
+    </h3>
+
+    <a href="https://www.google.com" target = "_blank" hreflang = "en">Google</a> <br />
+
+    <a href="img.png" download>Image</a>
+
+    <!--
+        Mailing someone using the anchor tag
+    -->
+
+    <h3>
+        Send a mail
+    </h3>
+    <a href="mailto:amanchourasiya@gmail.com">Send Email</a>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/* color: It is used to provide color to the text 
+It provides text color
+*/
+
+/* background-color: Provide the background color */
+
+/* text-align: Used to set the alignment of the text inside the container */
+
+/* direction: rtl;
+unicode-bidi: bidi-override;
+This is used for text-reversal */
+
+/* text-decoration: underline color style width of the line */
+
+/* text-transform: It makes the text either uppercase or lowercase */
+
+/* Spacing 
+
+letter-spacing: 3px;
+line-height: 25px;
+word-spacing: 20px;
+text-indent: 100px;
+
+white-space
+If you don't want the text to come to a new line when the space ends,
+use white-space: nowrap; It will give you a horizontal scrollbar
+*/
+
+/* text-shadow: horizontal-shift vertical-shift blur color 
+We can provide multiple shadows by separating them with commas
+*/
+
+/* font-size
+It changes the size of the font:
+Values can be provided to the font-size property in multiple ways
+px
+em
+rem
+% */
+
+/* 1st way
+body {
+
+} */
+
+* {
+    font-family: 'Roboto Mono', 'Sono', monospace;
+}
+
+.content {
+    /* Color name */
+    /* color: red; */
+
+    /* Hexadecimal value of color */
+    /* color: #c40827; */
+
+    /* RGB Value */
+    /* color: rgb(123, 56, 12); */
+
+    background-color: black;
+    color: white;
+    text-align: justify;
+    /* 1 em = 16px */
+    font-size: 150%;
+}
+
+#hello {
+    text-align: justify;
+    direction: rtl;
+    unicode-bidi: bidi-override;
+}
+
+.decorate {
+    /* text-decoration: underline red wavy 2px; */
+
+    text-decoration-line: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.transform {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 25px;
+    word-spacing: 20px;
+    text-indent: 100px;
+}
+
+.anyname {
+    white-space: nowrap;
+}
+
+h2 > p {
+    color: white;
+    text-shadow: 0 0 3px blue, 2px 2px 5px red;
+}

@@ -1,0 +1,40 @@
+.grid-container {
+    color: white;
+    display: grid;
+    background-color: #310926;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    justify-content: center;
+    align-content: center;
+    height: 80vh;
+
+    font-family: monospace;
+}
+
+.grid-container > .grid-item {
+    padding: 50px;
+    border: 2px solid white;
+    font-size: 24px;
+}
+
+.grid-item-2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.grid-item-3 {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.grid-item-4 {
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+.grid-container > div > span {
+    float: right;
+}

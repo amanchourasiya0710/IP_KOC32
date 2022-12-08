@@ -1,0 +1,22 @@
+div {
+    color: white;
+    background-color: black;
+    margin: 5px;
+    font-size: 50px;
+}
+
+.course {
+    background-color: lightblue;
+    font-size: 20px;
+    text-decoration: underline 10px blue;
+}
+
+.batch {
+    background-color: pink;
+    font-size: 20px;
+}
+
+.topic {
+    font-weight: 600;
+    font-size: 25px;
+}

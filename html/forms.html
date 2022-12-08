@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Frontend of a page-->
+    <!--Backend of a page-->
+    <form action="" id="admission">
+        <label for="name">Name:</label>
+        <input size="100" name="fullname" type="text" id="name" placeholder="Write your name" value = "Aman Chourasiya" autofocus readonly>
+        <br> <br>
+        <label for="email">Email:</label>
+        <input type="email" name="emailOfUser" id="email" placeholder="Provide email" value="x@gmail.com" required autocomplete>
+        <br> <br>
+        <label for="password">Password:</label>
+        <input type="password" name="pwdInput" id="password" placeholder="Password" value="password12345">
+        <br> <br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" min="-100" max="100" step="5" id="age" placeholder="Input your age" required>
+        <br> <br>
+        <input type="checkbox" id="agree" name="termsandconditions">
+        <label for="agree">I agree to terms and conditions: </label>
+        <br> <br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob">
+        <br> <br>
+        <label for="enroll">Enrollment Month: </label>
+        <input type="month" id="enroll">
+        <br> <br>
+        <input type="file" id="resume" accept="image/*" multiple>
+        <br> <br>
+        <input type="color" id="chooseColor">
+        <br> <br>
+        <label for="">Gender: </label>
+        <label for="male">Male</label>
+        <input name="gender" type="radio" id="male">
+        <label for="female">Female</label>
+        <input name="gender" type="radio" id="female">
+        <label for="other">Other</label>
+        <input name="gender" type="radio" id="other">
+        <br> <br>
+        <input type="submit" value="Click me to see magic">
+    </form>
+
+    <!--
+        Tag: input tag
+
+            Attributes:
+            1. type: Using the type attribute, we decide what kind of input the user has to provide 
+                text: Any input is valid
+                number: Only numeric data is allowed
+                email: It should be a valid email, the format should be valid
+                password: It encodes the input as special dots
+                checkbox: It creates a checkbox
+                date: Gives a date picker
+                datetime: We can input a valid datetime only
+                month: Any month of a year
+                submit: Creates a button
+            2. id (universal, valid for all tags)
+            3. placeholder
+            4. min, max, step attribute of input type = "number" element
+            5. value: Providing an initial value to the input element
+            6. maxlength: Limits the number of characters in an input element
+            7. autofocus: The input element is automatically in focus when the page loads. 
+                          Focus means the cursor is already there without any click
+            8. name: Naming a input tag. It is used by the backend tool to get the values.
+            9. readonly: Readable field only
+            10. accept: It is for file input type. We can restrict the type of file using this attribute:
+                        accept = "image/*" This will accept only images
+            11. required: The element must be filled before submitting
+            12. size: How much wide the input element should be
+            13. multiple: When we can multiple values in an input field
+            14. autocomplete: It shows autocomplete options
+            15. align: To align the elements in the center
+        Tag: label tag
+
+            Attributes:
+            1. for: label is for which tag
+    -->
+</body>
+</html>

@@ -1,0 +1,13 @@
+/* If the display property of an element is set to inline, width and height properties have no effect. */
+/* We can set the height and width of an element in inline-block and block properties. */
+
+.printing {
+    /* display: inline; */
+
+    /* display: inline-block; */
+
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
