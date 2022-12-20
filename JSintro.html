@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="JSintro.css" />
+  </head>
+  <body>
+    <div class="tables">
+        <div onclick="printTable()">Table of 1</div>
+        <div onclick="printTable()">Table of 2</div>
+        <div onclick="printTable()">Table of 3</div>
+        <div onclick="printTable()">Table of 4</div>
+        <div onclick="printTable()">Table of 5</div>
+        <div onclick="printTable()">Table of 6</div>
+        <div onclick="printTable()">Table of 7</div>
+    </div>
+    <p id="demo" name="para">
+      I am the first paragraph with id = demo and name = para.
+    </p>
+
+    <p class="hello">
+        I am having a class hello.
+    </p>
+
+    <p name="para" id="nextPara" onfocus="alert('kemo')">I am having id = nextPara</p>
+
+    <p class="content">I am having class = "content"</p>
+
+    <p class="content">I am having class = "content"</p>
+
+    <button onclick="myFunction()">Click to see Magic!</button>
+    <script>
+      function myFunction() {
+        let elem = document.getElementById("demo");
+        elem.style.backgroundColor = "green";
+
+        let st = "";
+        for(let i = 0; i < 10; i++) {
+            st = st + "<div>Hi " + i + "</div>" // Proper HTML code can be written inside
+        }
+
+        console.log(st);
+        elem.innerHTML = st;
+      }
+
+      function printTable() {
+        let st = "";
+      }
+    </script>
+  </body>
+</html>
