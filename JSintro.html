@@ -10,13 +10,9 @@
   </head>
   <body>
     <div class="tables">
-        <div onclick="printTable()">Table of 1</div>
-        <div onclick="printTable()">Table of 2</div>
-        <div onclick="printTable()">Table of 3</div>
-        <div onclick="printTable()">Table of 4</div>
-        <div onclick="printTable()">Table of 5</div>
-        <div onclick="printTable()">Table of 6</div>
-        <div onclick="printTable()">Table of 7</div>
+        <div onclick="printTable(this)">Table of 1</div>
+        <div onclick="printTable(this)">Table of 2</div>
+        <div onclick="printTable(this)">Table of 3</div>
     </div>
     <p id="demo" name="para">
       I am the first paragraph with id = demo and name = para.
@@ -47,8 +43,22 @@
         elem.innerHTML = st;
       }
 
-      function printTable() {
+      function printTable(elem) {
+        let text = elem.innerText;
+        let length = text.length;
+        console.log(length);
+        if (length > 20) {
+            return;
+        }
+        let number = text[length - 1]; // it is in character format
+        console.log(number);
+        number = parseInt(number); // Character is changed to integer
         let st = "";
+        for(let i = 1; i <= 10; i++) {
+            st = st + "<div>" + number + " x " + i + " = " + number * i + "</div>";
+        }
+        console.log(st);
+        elem.innerHTML = st;
       }
     </script>
   </body>

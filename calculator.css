@@ -1,0 +1,27 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.output {
+    border: 3px solid blue;
+    width: 70%;
+    height: 80px;
+    margin: auto;
+    font-size: 30px;
+    padding: 15px
+}
+
+.numbers {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.numbers > div {
+    padding: 20px;
+    border: 2px solid green;
+    margin: 20px;
+    font-size: 30px;
+}

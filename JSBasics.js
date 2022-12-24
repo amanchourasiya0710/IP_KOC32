@@ -55,3 +55,12 @@ for (let i = 0; i < len; i++) {
     st = st + " " + arr[i];
 }
 console.log(st);
+
+
+let a = 10;
+
+function demo() {
+    a = 15;
+}
+
+console.log(a);

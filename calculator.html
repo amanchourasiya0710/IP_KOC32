@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="display" class="output">
+
+    </div>
+
+    <div class="numbers">
+        <div onclick="displayItem(this)">
+            1
+        </div>
+        <div onclick="displayItem(this)">
+            2
+        </div>
+        <div onclick="displayItem(this)">
+            +
+        </div>
+        <div onclick="computeAnswer()">
+            =
+        </div>
+    </div>
+
+    <script>
+        function displayItem(elem) {
+            let text = elem.innerText;
+            let display = document.getElementById("display");
+            display.innerText = display.innerText + text;
+        }
+
+        function computeAnswer() {
+            let display = document.getElementById("display");
+            let expr = display.innerText;
+
+            display.innerText = eval(expr);
+        }
+    </script>
+</body>
+</html>
