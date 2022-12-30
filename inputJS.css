@@ -1,0 +1,13 @@
+input {
+    width: 316;
+    padding: 20px;
+    font-size: 24px;
+
+    outline: none;
+}
+
+#error {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
+}

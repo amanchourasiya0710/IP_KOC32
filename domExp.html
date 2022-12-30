@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <title>HTML DOM</title>
+  </head>
+  <body>
+    <a href="https://www.google.com">Google</a>
+
+    <div id="navBar" class="demo" onclick="myfunction()" onfocus="myfunction()">
+      <div class="content">Lorem, ipsum.</div>
+    </div>
+
+    <button onclick="createpElement(this)">Create Paragraph</button>
+    <button onclick="betweenInsert()">Insert Between</button>
+
+    <script>
+        const elem = document.getElementById("navBar"); // It returns an object in JavaScript
+        console.log(elem);
+        console.log(elem.id);
+
+        function myfunction() {
+            console.log("Hello world");
+        }
+
+        function createpElement(elem) {
+            const element = document.createElement('p');
+            // innerText, innerHTML, style.border, etc., onclick, id, class
+            element.id = "newParagraph";
+            element.innerText = "This is a newly created p element";
+            document.body.appendChild(element);
+
+            const imgElement = document.createElement('img');
+            console.log(imgElement);
+            imgElement.src = "mountains.jpg";
+            imgElement.style.width = "200px";
+
+            document.getElementById('navBar').appendChild(imgElement);
+
+            elem.remove();
+        }
+
+        function betweenInsert() {
+            const element = document.createElement('p');
+            element.innerText = "I am in between Google and Lorem, ipsum";
+
+            const bodyElement = document.body;
+            document.body.insertBefore(element, bodyElement.children[1]);
+        }
+    </script>
+  </body>
+</html>
+
+<!-- This is my HTML Document -->

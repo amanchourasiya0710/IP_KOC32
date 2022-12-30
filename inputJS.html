@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="inputJS.css" />
+  </head>
+  <body>
+    <h1>JavaScript on Input elements</h1>
+
+    <input type="text" id="password" onkeyup="myFunction(this)"/>
+
+    <br>
+
+    <input type="text" id="password" onkeyup="checkPassword(this)"/>
+    <div id="error"></div>
+
+    <script>
+
+        function containsUppercase(str) {
+            return /[A-Z]/.test(str); // Ignore
+        }
+
+        function myFunction(elem) {
+            // console.log(elem.value); // value attribute is used to access the value of an input element
+            let inp = elem.value;
+
+            if (inp.length < 5) {
+                elem.style.border = "2px solid red";
+                document.getElementById("error").innerHTML = "<div> Minimum 5 characters required </div>";
+            }
+            else {
+                elem.style.border = "2px solid green";
+                document.getElementById("error").innerHTML = "";
+            }
+        }
+
+        function checkPassword(elem) {
+            let pass = elem.value;
+
+            // Uppercase character
+            // Lowercase character
+            // Minimum 5 characters
+            // Special character
+            
+            let isUpperCasePresent = containsUppercase(pass);
+            if (isUpperCasePresent == false) {
+                elem.style.border = "2px solid red";
+                document.getElementById("error").innerHTML = "<div> At least one uppercase character required. </div>"
+            }
+            else {
+                elem.style.border = "2px solid green";
+                document.getElementById("error").innerHTML = "";
+            }
+        }
+    </script>
+  </body>
+</html>
